@@ -1,0 +1,867 @@
+{
+  "evaluation_date": "2025-08-15T01:33:48.900657",
+  "model_name": "Qwen/Qwen2.5-Omni-7B",
+  "dataset_name": "Ano-2090/Nova",
+  "num_samples_evaluated": 50,
+  "accuracy_metrics": {
+    "accuracy": 0.14,
+    "exact_matches": 0,
+    "close_matches": 7,
+    "partial_matches": 3,
+    "no_matches": 40,
+    "total_predictions": 50,
+    "avg_similarity": 0.31641847783489085
+  },
+  "individual_results": [
+    {
+      "sample_id": 0,
+      "filename": "case0183_001.png",
+      "ground_truth_diagnosis": "Lhermitte-Duclos disease",
+      "differential_diagnosis": "Lhermitte-Duclos disease; Metastases; Medulloblastoma; Cerebellitis",
+      "predicted_diagnosis": "No diagnosis found",
+      "generated_report": "Error in generation: string indices must be integers, not 'str'",
+      "clinical_history": "A 60-year-old woman diagnosed with breast cancer who had received a mastectomy, chemotherapy and radiotherapy, presented with persistent headache of low intensity that had been present for 2 months and had no other without other neurological symptoms.",
+      "caption": "Axial T1 (A) and T2 (B) weighted images showing a posterior fossa lesion located intra-axial and affecting most of the left cerebellar hemisphere. Signal intensity is heterogeneous, with some areas isointense to gray matter, but also some T2 hyperintense stripy areas that give the lesion a \u201ctigroid\u201d aspect",
+      "diagnosis_accuracy": {
+        "similarity_score": 0.2857142857142857,
+        "accuracy_level": "no_match",
+        "is_correct": false,
+        "predicted_normalized": "no diagnosis found",
+        "ground_truth_normalized": "lhermitte-duclos disease"
+      }
+    },
+    {
+      "sample_id": 1,
+      "filename": "case0183_002.png",
+      "ground_truth_diagnosis": "Lhermitte-Duclos disease",
+      "differential_diagnosis": "Lhermitte-Duclos disease; Metastases; Medulloblastoma; Cerebellitis",
+      "predicted_diagnosis": "No diagnosis found",
+      "generated_report": "Error in generation: string indices must be integers, not 'str'",
+      "clinical_history": "A 60-year-old woman diagnosed with breast cancer who had received a mastectomy, chemotherapy and radiotherapy, presented with persistent headache of low intensity that had been present for 2 months and had no other without other neurological symptoms.",
+      "caption": "FLAIR (C) weighted image shows minor vasogenic edema, and T2 GRE (D) weighted image shows no calcified or hemorragic areas",
+      "diagnosis_accuracy": {
+        "similarity_score": 0.2857142857142857,
+        "accuracy_level": "no_match",
+        "is_correct": false,
+        "predicted_normalized": "no diagnosis found",
+        "ground_truth_normalized": "lhermitte-duclos disease"
+      }
+    },
+    {
+      "sample_id": 2,
+      "filename": "case0183_003.png",
+      "ground_truth_diagnosis": "Lhermitte-Duclos disease",
+      "differential_diagnosis": "Lhermitte-Duclos disease; Metastases; Medulloblastoma; Cerebellitis",
+      "predicted_diagnosis": "No diagnosis found",
+      "generated_report": "Error in generation: string indices must be integers, not 'str'",
+      "clinical_history": "A 60-year-old woman diagnosed with breast cancer who had received a mastectomy, chemotherapy and radiotherapy, presented with persistent headache of low intensity that had been present for 2 months and had no other without other neurological symptoms.",
+      "caption": "FLAIR (C) weighted image shows minor vasogenic edema, and T2 GRE (D) weighted image shows no calcified or hemorragic areas",
+      "diagnosis_accuracy": {
+        "similarity_score": 0.2857142857142857,
+        "accuracy_level": "no_match",
+        "is_correct": false,
+        "predicted_normalized": "no diagnosis found",
+        "ground_truth_normalized": "lhermitte-duclos disease"
+      }
+    },
+    {
+      "sample_id": 3,
+      "filename": "case0016_001.png",
+      "ground_truth_diagnosis": "Oligodendroglioma (WHO grade II)",
+      "differential_diagnosis": "Oligodendroglioma (WHO grade II); Astrocytoma (specially low grade diffuse astrocytoma); Ganglioglioma; Dysembryonic neurorpithelial tumor (DNET); Pleomorphic xanthoastrocytoma (PXA); Cerebral arteriovenous malformation; Cerebral Contusion",
+      "predicted_diagnosis": "No diagnosis found",
+      "generated_report": "Error in generation: string indices must be integers, not 'str'",
+      "clinical_history": "A 38-year-old male presented to the emergency department after a fall, with frontal cranial impact and loss of consciousness. At admittance he had a Glasgow Coma Scale Score of 14, without focal neurological deficits.",
+      "caption": "Coronal T2WI, depicting the cortical-subcortical right frontal lesion, with the central hematoma capsule",
+      "diagnosis_accuracy": {
+        "similarity_score": 0.24,
+        "accuracy_level": "no_match",
+        "is_correct": false,
+        "predicted_normalized": "no diagnosis found",
+        "ground_truth_normalized": "oligodendroglioma (who grade ii)"
+      }
+    },
+    {
+      "sample_id": 4,
+      "filename": "case0016_002.png",
+      "ground_truth_diagnosis": "Oligodendroglioma (WHO grade II)",
+      "differential_diagnosis": "Oligodendroglioma (WHO grade II); Astrocytoma (specially low grade diffuse astrocytoma); Ganglioglioma; Dysembryonic neurorpithelial tumor (DNET); Pleomorphic xanthoastrocytoma (PXA); Cerebral arteriovenous malformation; Cerebral Contusion",
+      "predicted_diagnosis": "No diagnosis found",
+      "generated_report": "Error in generation: string indices must be integers, not 'str'",
+      "clinical_history": "A 38-year-old male presented to the emergency department after a fall, with frontal cranial impact and loss of consciousness. At admittance he had a Glasgow Coma Scale Score of 14, without focal neurological deficits.",
+      "caption": "Precontrast T1WI, shows a hypointense heterogeneous mass, with involvment of the cortex and underlying white matter",
+      "diagnosis_accuracy": {
+        "similarity_score": 0.24,
+        "accuracy_level": "no_match",
+        "is_correct": false,
+        "predicted_normalized": "no diagnosis found",
+        "ground_truth_normalized": "oligodendroglioma (who grade ii)"
+      }
+    },
+    {
+      "sample_id": 5,
+      "filename": "case0016_003.png",
+      "ground_truth_diagnosis": "Oligodendroglioma (WHO grade II)",
+      "differential_diagnosis": "Oligodendroglioma (WHO grade II); Astrocytoma (specially low grade diffuse astrocytoma); Ganglioglioma; Dysembryonic neurorpithelial tumor (DNET); Pleomorphic xanthoastrocytoma (PXA); Cerebral arteriovenous malformation; Cerebral Contusion",
+      "predicted_diagnosis": "No diagnosis found",
+      "generated_report": "Error in generation: string indices must be integers, not 'str'",
+      "clinical_history": "A 38-year-old male presented to the emergency department after a fall, with frontal cranial impact and loss of consciousness. At admittance he had a Glasgow Coma Scale Score of 14, without focal neurological deficits.",
+      "caption": "Postcontrast T1WI shows very slight, heterogeneous signal enhancement",
+      "diagnosis_accuracy": {
+        "similarity_score": 0.24,
+        "accuracy_level": "no_match",
+        "is_correct": false,
+        "predicted_normalized": "no diagnosis found",
+        "ground_truth_normalized": "oligodendroglioma (who grade ii)"
+      }
+    },
+    {
+      "sample_id": 6,
+      "filename": "case0016_004.png",
+      "ground_truth_diagnosis": "Oligodendroglioma (WHO grade II)",
+      "differential_diagnosis": "Oligodendroglioma (WHO grade II); Astrocytoma (specially low grade diffuse astrocytoma); Ganglioglioma; Dysembryonic neurorpithelial tumor (DNET); Pleomorphic xanthoastrocytoma (PXA); Cerebral arteriovenous malformation; Cerebral Contusion",
+      "predicted_diagnosis": "No diagnosis found",
+      "generated_report": "Error in generation: string indices must be integers, not 'str'",
+      "clinical_history": "A 38-year-old male presented to the emergency department after a fall, with frontal cranial impact and loss of consciousness. At admittance he had a Glasgow Coma Scale Score of 14, without focal neurological deficits.",
+      "caption": "Axial SWI image showing the blood products deposition from the previous hematoma",
+      "diagnosis_accuracy": {
+        "similarity_score": 0.24,
+        "accuracy_level": "no_match",
+        "is_correct": false,
+        "predicted_normalized": "no diagnosis found",
+        "ground_truth_normalized": "oligodendroglioma (who grade ii)"
+      }
+    },
+    {
+      "sample_id": 7,
+      "filename": "case0276_001.png",
+      "ground_truth_diagnosis": "Final Diagnosis not found.",
+      "differential_diagnosis": "En plaque tuberculoma; Meningioma; Dural metastasis; Sarcoidosis; Lymphoma",
+      "predicted_diagnosis": "No diagnosis found",
+      "generated_report": "Error in generation: string indices must be integers, not 'str'",
+      "clinical_history": "A 14-year-old boy presented with complaints of headache, low-grade fever, and dizziness since two months. He also had multiple episodes of generalised tonic-clonic seizures. He had a history of pulmonary tuberculosis four years back, for which he had completed his course of anti-tubercular drugs. On clinical examination, there was neck rigidity.",
+      "caption": "Axial T2 (2a) and coronal FLAIR (2b) sequences of the MRI of the brain show an iso-hypointense signal within the lesion. There is peri-lesional oedema in the underlying parenchyma.",
+      "diagnosis_accuracy": {
+        "similarity_score": 0.7906976744186046,
+        "accuracy_level": "close_match",
+        "is_correct": true,
+        "predicted_normalized": "no diagnosis found",
+        "ground_truth_normalized": "final diagnosis not found"
+      }
+    },
+    {
+      "sample_id": 8,
+      "filename": "case0276_002.png",
+      "ground_truth_diagnosis": "Final Diagnosis not found.",
+      "differential_diagnosis": "En plaque tuberculoma; Meningioma; Dural metastasis; Sarcoidosis; Lymphoma",
+      "predicted_diagnosis": "No diagnosis found",
+      "generated_report": "Error in generation: string indices must be integers, not 'str'",
+      "clinical_history": "A 14-year-old boy presented with complaints of headache, low-grade fever, and dizziness since two months. He also had multiple episodes of generalised tonic-clonic seizures. He had a history of pulmonary tuberculosis four years back, for which he had completed his course of anti-tubercular drugs. On clinical examination, there was neck rigidity.",
+      "caption": "Axial T2 (2a) and coronal FLAIR (2b) sequences of the MRI of the brain show an iso-hypointense signal within the lesion. There is peri-lesional oedema in the underlying parenchyma.",
+      "diagnosis_accuracy": {
+        "similarity_score": 0.7906976744186046,
+        "accuracy_level": "close_match",
+        "is_correct": true,
+        "predicted_normalized": "no diagnosis found",
+        "ground_truth_normalized": "final diagnosis not found"
+      }
+    },
+    {
+      "sample_id": 9,
+      "filename": "case0276_003.png",
+      "ground_truth_diagnosis": "Final Diagnosis not found.",
+      "differential_diagnosis": "En plaque tuberculoma; Meningioma; Dural metastasis; Sarcoidosis; Lymphoma",
+      "predicted_diagnosis": "No diagnosis found",
+      "generated_report": "Error in generation: string indices must be integers, not 'str'",
+      "clinical_history": "A 14-year-old boy presented with complaints of headache, low-grade fever, and dizziness since two months. He also had multiple episodes of generalised tonic-clonic seizures. He had a history of pulmonary tuberculosis four years back, for which he had completed his course of anti-tubercular drugs. On clinical examination, there was neck rigidity.",
+      "caption": "Sagittal pre (3a), post-contrast sagittal (3b), and axial (3c) T1 sequence of the MRI of the brain show a dural-based lesion with isointense signal and homogeneous enhancement.",
+      "diagnosis_accuracy": {
+        "similarity_score": 0.7906976744186046,
+        "accuracy_level": "close_match",
+        "is_correct": true,
+        "predicted_normalized": "no diagnosis found",
+        "ground_truth_normalized": "final diagnosis not found"
+      }
+    },
+    {
+      "sample_id": 10,
+      "filename": "case0276_004.png",
+      "ground_truth_diagnosis": "Final Diagnosis not found.",
+      "differential_diagnosis": "En plaque tuberculoma; Meningioma; Dural metastasis; Sarcoidosis; Lymphoma",
+      "predicted_diagnosis": "No diagnosis found",
+      "generated_report": "Error in generation: string indices must be integers, not 'str'",
+      "clinical_history": "A 14-year-old boy presented with complaints of headache, low-grade fever, and dizziness since two months. He also had multiple episodes of generalised tonic-clonic seizures. He had a history of pulmonary tuberculosis four years back, for which he had completed his course of anti-tubercular drugs. On clinical examination, there was neck rigidity.",
+      "caption": "Sagittal pre (3a), post-contrast sagittal (3b), and axial (3c) T1 sequence of the MRI of the brain show a dural-based lesion with isointense signal and homogeneous enhancement.",
+      "diagnosis_accuracy": {
+        "similarity_score": 0.7906976744186046,
+        "accuracy_level": "close_match",
+        "is_correct": true,
+        "predicted_normalized": "no diagnosis found",
+        "ground_truth_normalized": "final diagnosis not found"
+      }
+    },
+    {
+      "sample_id": 11,
+      "filename": "case0276_005.png",
+      "ground_truth_diagnosis": "Final Diagnosis not found.",
+      "differential_diagnosis": "En plaque tuberculoma; Meningioma; Dural metastasis; Sarcoidosis; Lymphoma",
+      "predicted_diagnosis": "No diagnosis found",
+      "generated_report": "Error in generation: string indices must be integers, not 'str'",
+      "clinical_history": "A 14-year-old boy presented with complaints of headache, low-grade fever, and dizziness since two months. He also had multiple episodes of generalised tonic-clonic seizures. He had a history of pulmonary tuberculosis four years back, for which he had completed his course of anti-tubercular drugs. On clinical examination, there was neck rigidity.",
+      "caption": "Axial diffusion-weighted sequence of the MRI of the brain shows no diffusion restriction within the lesion.",
+      "diagnosis_accuracy": {
+        "similarity_score": 0.7906976744186046,
+        "accuracy_level": "close_match",
+        "is_correct": true,
+        "predicted_normalized": "no diagnosis found",
+        "ground_truth_normalized": "final diagnosis not found"
+      }
+    },
+    {
+      "sample_id": 12,
+      "filename": "case0018_003.png",
+      "ground_truth_diagnosis": "Colloid cyst",
+      "differential_diagnosis": "Colloid cyst; Intraventricular haemorrhage; Ependymoma",
+      "predicted_diagnosis": "No diagnosis found",
+      "generated_report": "Error in generation: string indices must be integers, not 'str'",
+      "clinical_history": "A 56-years-old man consulted his General Practitioner with a history of increased feeling of cranial pressure and headache for two days. The patient was sent to the local Casualty Department. In clinical examination nothing abnormal was detected. All laboratory tests were normal. A cranial CT was performed, followed by cranial MRI.",
+      "caption": "MRI T2 coronal showing the intraventricular colloid cyst being hypointense compared to the cerebrospinal fluid.",
+      "diagnosis_accuracy": {
+        "similarity_score": 0.2,
+        "accuracy_level": "no_match",
+        "is_correct": false,
+        "predicted_normalized": "no diagnosis found",
+        "ground_truth_normalized": "colloid cyst"
+      }
+    },
+    {
+      "sample_id": 13,
+      "filename": "case0018_001.png",
+      "ground_truth_diagnosis": "Colloid cyst",
+      "differential_diagnosis": "Colloid cyst; Intraventricular haemorrhage; Ependymoma",
+      "predicted_diagnosis": "No diagnosis found",
+      "generated_report": "Error in generation: string indices must be integers, not 'str'",
+      "clinical_history": "A 56-years-old man consulted his General Practitioner with a history of increased feeling of cranial pressure and headache for two days. The patient was sent to the local Casualty Department. In clinical examination nothing abnormal was detected. All laboratory tests were normal. A cranial CT was performed, followed by cranial MRI.",
+      "caption": "MRI T1 transversal. The lesion is isointense to the cerebrum.",
+      "diagnosis_accuracy": {
+        "similarity_score": 0.2,
+        "accuracy_level": "no_match",
+        "is_correct": false,
+        "predicted_normalized": "no diagnosis found",
+        "ground_truth_normalized": "colloid cyst"
+      }
+    },
+    {
+      "sample_id": 14,
+      "filename": "case0018_002.png",
+      "ground_truth_diagnosis": "Colloid cyst",
+      "differential_diagnosis": "Colloid cyst; Intraventricular haemorrhage; Ependymoma",
+      "predicted_diagnosis": "No diagnosis found",
+      "generated_report": "Error in generation: string indices must be integers, not 'str'",
+      "clinical_history": "A 56-years-old man consulted his General Practitioner with a history of increased feeling of cranial pressure and headache for two days. The patient was sent to the local Casualty Department. In clinical examination nothing abnormal was detected. All laboratory tests were normal. A cranial CT was performed, followed by cranial MRI.",
+      "caption": "MRI T1 post-contrast (7 ml Gadovist) \u2013 no enhancement of the lesion.",
+      "diagnosis_accuracy": {
+        "similarity_score": 0.2,
+        "accuracy_level": "no_match",
+        "is_correct": false,
+        "predicted_normalized": "no diagnosis found",
+        "ground_truth_normalized": "colloid cyst"
+      }
+    },
+    {
+      "sample_id": 15,
+      "filename": "case0062_001.png",
+      "ground_truth_diagnosis": "Hemimegalencephaly",
+      "differential_diagnosis": "Hemimegalencephaly; Focal cortical dysplasia; Rasmussen encephalitis; Tuberous sclerosis; Infiltrating glioma in gliomatosis pattern",
+      "predicted_diagnosis": "No diagnosis found",
+      "generated_report": "Error in generation: string indices must be integers, not 'str'",
+      "clinical_history": "4-month-old male patient with increasing seizure frequency.",
+      "caption": "MRI brain shows significant dysmorphic enlargement of the left cerebral hemisphere. Diffuse pachygyria/ polymicrogyria results in loss of sulcation, with abnormal left hemispheric myelination.",
+      "diagnosis_accuracy": {
+        "similarity_score": 0.1111111111111111,
+        "accuracy_level": "no_match",
+        "is_correct": false,
+        "predicted_normalized": "no diagnosis found",
+        "ground_truth_normalized": "hemimegalencephaly"
+      }
+    },
+    {
+      "sample_id": 16,
+      "filename": "case0062_002.png",
+      "ground_truth_diagnosis": "Hemimegalencephaly",
+      "differential_diagnosis": "Hemimegalencephaly; Focal cortical dysplasia; Rasmussen encephalitis; Tuberous sclerosis; Infiltrating glioma in gliomatosis pattern",
+      "predicted_diagnosis": "No diagnosis found",
+      "generated_report": "Error in generation: string indices must be integers, not 'str'",
+      "clinical_history": "4-month-old male patient with increasing seizure frequency.",
+      "caption": "MRI brain shows significant dysmorphic enlargement of the left cerebral hemisphere. Diffuse pachygyria/ polymicrogyria results in loss of sulcation, with abnormal left hemispheric myelination.",
+      "diagnosis_accuracy": {
+        "similarity_score": 0.1111111111111111,
+        "accuracy_level": "no_match",
+        "is_correct": false,
+        "predicted_normalized": "no diagnosis found",
+        "ground_truth_normalized": "hemimegalencephaly"
+      }
+    },
+    {
+      "sample_id": 17,
+      "filename": "case0062_003.png",
+      "ground_truth_diagnosis": "Hemimegalencephaly",
+      "differential_diagnosis": "Hemimegalencephaly; Focal cortical dysplasia; Rasmussen encephalitis; Tuberous sclerosis; Infiltrating glioma in gliomatosis pattern",
+      "predicted_diagnosis": "No diagnosis found",
+      "generated_report": "Error in generation: string indices must be integers, not 'str'",
+      "clinical_history": "4-month-old male patient with increasing seizure frequency.",
+      "caption": "MRI T1 coronal brain shows to better extent the volume discrepancy between hemispheres with dysmorphic left hemisphere features with loss of sulcation.",
+      "diagnosis_accuracy": {
+        "similarity_score": 0.1111111111111111,
+        "accuracy_level": "no_match",
+        "is_correct": false,
+        "predicted_normalized": "no diagnosis found",
+        "ground_truth_normalized": "hemimegalencephaly"
+      }
+    },
+    {
+      "sample_id": 18,
+      "filename": "case0062_004.png",
+      "ground_truth_diagnosis": "Hemimegalencephaly",
+      "differential_diagnosis": "Hemimegalencephaly; Focal cortical dysplasia; Rasmussen encephalitis; Tuberous sclerosis; Infiltrating glioma in gliomatosis pattern",
+      "predicted_diagnosis": "No diagnosis found",
+      "generated_report": "Error in generation: string indices must be integers, not 'str'",
+      "clinical_history": "4-month-old male patient with increasing seizure frequency.",
+      "caption": "MRI T1 coronal brain shows to better extent the volume discrepancy between hemispheres with dysmorphic left hemisphere features with loss of sulcation.",
+      "diagnosis_accuracy": {
+        "similarity_score": 0.1111111111111111,
+        "accuracy_level": "no_match",
+        "is_correct": false,
+        "predicted_normalized": "no diagnosis found",
+        "ground_truth_normalized": "hemimegalencephaly"
+      }
+    },
+    {
+      "sample_id": 19,
+      "filename": "case0158_002.png",
+      "ground_truth_diagnosis": "Pineal parenchymal tumour of intermediate differentiation (PPTID)",
+      "differential_diagnosis": "Differential Diagnosis not found.",
+      "predicted_diagnosis": "No diagnosis found",
+      "generated_report": "Error in generation: string indices must be integers, not 'str'",
+      "clinical_history": "A 45-year-old female patient with history of headache and vomiting presented to the OPD. On examination, bulk, power and reflexes were normal. Initial laboratory results show no evidence of biochemical abnormalities and blood counts were normal. Then the patient was subjected to Imaging.",
+      "caption": "(1b) FLAIR heterointense lesion noted in the pineal region, which shows heterogenous enhancement on contrast (1c) administration",
+      "diagnosis_accuracy": {
+        "similarity_score": 0.21686746987951808,
+        "accuracy_level": "no_match",
+        "is_correct": false,
+        "predicted_normalized": "no diagnosis found",
+        "ground_truth_normalized": "pineal parenchymal tumour of intermediate differentiation (pptid)"
+      }
+    },
+    {
+      "sample_id": 20,
+      "filename": "case0158_003.png",
+      "ground_truth_diagnosis": "Pineal parenchymal tumour of intermediate differentiation (PPTID)",
+      "differential_diagnosis": "Differential Diagnosis not found.",
+      "predicted_diagnosis": "No diagnosis found",
+      "generated_report": "Error in generation: string indices must be integers, not 'str'",
+      "clinical_history": "A 45-year-old female patient with history of headache and vomiting presented to the OPD. On examination, bulk, power and reflexes were normal. Initial laboratory results show no evidence of biochemical abnormalities and blood counts were normal. Then the patient was subjected to Imaging.",
+      "caption": "(3a) T1 heterointense lesion noted in the pineal region",
+      "diagnosis_accuracy": {
+        "similarity_score": 0.21686746987951808,
+        "accuracy_level": "no_match",
+        "is_correct": false,
+        "predicted_normalized": "no diagnosis found",
+        "ground_truth_normalized": "pineal parenchymal tumour of intermediate differentiation (pptid)"
+      }
+    },
+    {
+      "sample_id": 21,
+      "filename": "case0158_004.png",
+      "ground_truth_diagnosis": "Pineal parenchymal tumour of intermediate differentiation (PPTID)",
+      "differential_diagnosis": "Differential Diagnosis not found.",
+      "predicted_diagnosis": "No diagnosis found",
+      "generated_report": "Error in generation: string indices must be integers, not 'str'",
+      "clinical_history": "A 45-year-old female patient with history of headache and vomiting presented to the OPD. On examination, bulk, power and reflexes were normal. Initial laboratory results show no evidence of biochemical abnormalities and blood counts were normal. Then the patient was subjected to Imaging.",
+      "caption": "(3b) T2 heterointense lesion noted in the pineal region",
+      "diagnosis_accuracy": {
+        "similarity_score": 0.21686746987951808,
+        "accuracy_level": "no_match",
+        "is_correct": false,
+        "predicted_normalized": "no diagnosis found",
+        "ground_truth_normalized": "pineal parenchymal tumour of intermediate differentiation (pptid)"
+      }
+    },
+    {
+      "sample_id": 22,
+      "filename": "case0158_005.png",
+      "ground_truth_diagnosis": "Pineal parenchymal tumour of intermediate differentiation (PPTID)",
+      "differential_diagnosis": "Differential Diagnosis not found.",
+      "predicted_diagnosis": "No diagnosis found",
+      "generated_report": "Error in generation: string indices must be integers, not 'str'",
+      "clinical_history": "A 45-year-old female patient with history of headache and vomiting presented to the OPD. On examination, bulk, power and reflexes were normal. Initial laboratory results show no evidence of biochemical abnormalities and blood counts were normal. Then the patient was subjected to Imaging.",
+      "caption": "(3c) FLAIR hyperintense lesion  noted in the pineal region",
+      "diagnosis_accuracy": {
+        "similarity_score": 0.21686746987951808,
+        "accuracy_level": "no_match",
+        "is_correct": false,
+        "predicted_normalized": "no diagnosis found",
+        "ground_truth_normalized": "pineal parenchymal tumour of intermediate differentiation (pptid)"
+      }
+    },
+    {
+      "sample_id": 23,
+      "filename": "case0158_001.png",
+      "ground_truth_diagnosis": "Pineal parenchymal tumour of intermediate differentiation (PPTID)",
+      "differential_diagnosis": "Differential Diagnosis not found.",
+      "predicted_diagnosis": "No diagnosis found",
+      "generated_report": "Error in generation: string indices must be integers, not 'str'",
+      "clinical_history": "A 45-year-old female patient with history of headache and vomiting presented to the OPD. On examination, bulk, power and reflexes were normal. Initial laboratory results show no evidence of biochemical abnormalities and blood counts were normal. Then the patient was subjected to Imaging.",
+      "caption": "(3f) & (3g) On contrast administration, the lesion shows heterogenous enhancement. Suboccipital craniectomy defect noted in the right side",
+      "diagnosis_accuracy": {
+        "similarity_score": 0.21686746987951808,
+        "accuracy_level": "no_match",
+        "is_correct": false,
+        "predicted_normalized": "no diagnosis found",
+        "ground_truth_normalized": "pineal parenchymal tumour of intermediate differentiation (pptid)"
+      }
+    },
+    {
+      "sample_id": 24,
+      "filename": "case0221_001.png",
+      "ground_truth_diagnosis": "Solitary Fibrous Tumour of the meninges",
+      "differential_diagnosis": "Solitary Fibrous Tumour of the meninges; Meningioma; Dural metastasis; Chloroma; Non-tumoral extra-axial mass lesion (Rosai-Dorfman disease, sarcoidosis, etc)",
+      "predicted_diagnosis": "No diagnosis found",
+      "generated_report": "Error in generation: string indices must be integers, not 'str'",
+      "clinical_history": "43-year-old woman with progressive left hemiparesis, headaches and behavioural changes.",
+      "caption": "Axial FLAIR reveals huge heterogeneous extra-axial tumor with massive mass effect, but no edema",
+      "diagnosis_accuracy": {
+        "similarity_score": 0.3157894736842105,
+        "accuracy_level": "no_match",
+        "is_correct": false,
+        "predicted_normalized": "no diagnosis found",
+        "ground_truth_normalized": "solitary fibrous tumour of the meninges"
+      }
+    },
+    {
+      "sample_id": 25,
+      "filename": "case0221_002.png",
+      "ground_truth_diagnosis": "Solitary Fibrous Tumour of the meninges",
+      "differential_diagnosis": "Solitary Fibrous Tumour of the meninges; Meningioma; Dural metastasis; Chloroma; Non-tumoral extra-axial mass lesion (Rosai-Dorfman disease, sarcoidosis, etc)",
+      "predicted_diagnosis": "No diagnosis found",
+      "generated_report": "Error in generation: string indices must be integers, not 'str'",
+      "clinical_history": "43-year-old woman with progressive left hemiparesis, headaches and behavioural changes.",
+      "caption": "Sagittal T2-weighted image confirms the extra-axial origin of the lesion with significant osteolysis of the skull vault. Note the Ying & Yang appearance with different signal intensities of the nodules",
+      "diagnosis_accuracy": {
+        "similarity_score": 0.3157894736842105,
+        "accuracy_level": "no_match",
+        "is_correct": false,
+        "predicted_normalized": "no diagnosis found",
+        "ground_truth_normalized": "solitary fibrous tumour of the meninges"
+      }
+    },
+    {
+      "sample_id": 26,
+      "filename": "case0221_003.png",
+      "ground_truth_diagnosis": "Solitary Fibrous Tumour of the meninges",
+      "differential_diagnosis": "Solitary Fibrous Tumour of the meninges; Meningioma; Dural metastasis; Chloroma; Non-tumoral extra-axial mass lesion (Rosai-Dorfman disease, sarcoidosis, etc)",
+      "predicted_diagnosis": "No diagnosis found",
+      "generated_report": "Error in generation: string indices must be integers, not 'str'",
+      "clinical_history": "43-year-old woman with progressive left hemiparesis, headaches and behavioural changes.",
+      "caption": "Axial Diffusion weighted-image shows no restriction",
+      "diagnosis_accuracy": {
+        "similarity_score": 0.3157894736842105,
+        "accuracy_level": "no_match",
+        "is_correct": false,
+        "predicted_normalized": "no diagnosis found",
+        "ground_truth_normalized": "solitary fibrous tumour of the meninges"
+      }
+    },
+    {
+      "sample_id": 27,
+      "filename": "case0104_001.png",
+      "ground_truth_diagnosis": "Left cerebello-pontine cistern epidermoid",
+      "differential_diagnosis": "Left cerebello-pontine cistern epidermoid; Arachnoid cyst; Dermoid",
+      "predicted_diagnosis": "No diagnosis found",
+      "generated_report": "Error in generation: string indices must be integers, not 'str'",
+      "clinical_history": "Headache for 15 days, left-sided hearing difficulties, left-sided facial numbness and sharp shooting pain for 15 days, vertigo for 20 days. No limb weakness, h/o trauma or surgery. Physical examination shows left-sided 5th to 8th cranial nerve deficits.",
+      "caption": "Axial T2W - CSF signal intensity lesion in left CP angle cistern.",
+      "diagnosis_accuracy": {
+        "similarity_score": 0.23728813559322035,
+        "accuracy_level": "no_match",
+        "is_correct": false,
+        "predicted_normalized": "no diagnosis found",
+        "ground_truth_normalized": "left cerebello-pontine cistern epidermoid"
+      }
+    },
+    {
+      "sample_id": 28,
+      "filename": "case0263_001.png",
+      "ground_truth_diagnosis": "Final Diagnosis not found.",
+      "differential_diagnosis": "Artery of Percheron infarction; Bilateral internal cerebral venous thrombosis; Acute basilar artery occlusion",
+      "predicted_diagnosis": "No diagnosis found",
+      "generated_report": "Error in generation: string indices must be integers, not 'str'",
+      "clinical_history": "A 65-year-old male presented in view of multiple episodes of transient loss of consciousness , each episode lasting approximately 15 minutes. There were no symptoms prior to or following the period of unconsciousness. Examination was unremarkable, and investigations, including ECG, echocardiogram, and CT stroke protocol, were unremarkable. An MRI brain was later organised.",
+      "caption": "Axial fluid-attenuated inversion recovery (FLAIR) MR image at the level of the thalami showing high signal in the bilateral ventromedial thalami consistent with oedema.",
+      "diagnosis_accuracy": {
+        "similarity_score": 0.7906976744186046,
+        "accuracy_level": "close_match",
+        "is_correct": true,
+        "predicted_normalized": "no diagnosis found",
+        "ground_truth_normalized": "final diagnosis not found"
+      }
+    },
+    {
+      "sample_id": 29,
+      "filename": "case0263_002.png",
+      "ground_truth_diagnosis": "Final Diagnosis not found.",
+      "differential_diagnosis": "Artery of Percheron infarction; Bilateral internal cerebral venous thrombosis; Acute basilar artery occlusion",
+      "predicted_diagnosis": "No diagnosis found",
+      "generated_report": "Error in generation: string indices must be integers, not 'str'",
+      "clinical_history": "A 65-year-old male presented in view of multiple episodes of transient loss of consciousness , each episode lasting approximately 15 minutes. There were no symptoms prior to or following the period of unconsciousness. Examination was unremarkable, and investigations, including ECG, echocardiogram, and CT stroke protocol, were unremarkable. An MRI brain was later organised.",
+      "caption": "Axial T2-weighted MR image at the same level as Figure 1 showing T2 hyperintensity in the bilateral ventromedial thalami in keeping with oedema.",
+      "diagnosis_accuracy": {
+        "similarity_score": 0.7906976744186046,
+        "accuracy_level": "close_match",
+        "is_correct": true,
+        "predicted_normalized": "no diagnosis found",
+        "ground_truth_normalized": "final diagnosis not found"
+      }
+    },
+    {
+      "sample_id": 30,
+      "filename": "case0196_001.png",
+      "ground_truth_diagnosis": "Acute toxic leukoencephalopathy due to methanol toxicity",
+      "differential_diagnosis": "Differential Diagnosis not found.",
+      "predicted_diagnosis": "No diagnosis found",
+      "generated_report": "Error in generation: string indices must be integers, not 'str'",
+      "clinical_history": "A 35-year-old man was brought to the Emergency Department with a history of unconsciousness. He had a history of acute wild alcohol (made out of fox meat) intake 24 hours prior to the presentation.\u00a0 Examination revealed the Glasgow Coma Scale to be 6. An arterial blood gas analysis showed a high anion gap metabolic acidosis.",
+      "caption": "T2 coronal sequence showing symmetric hyperintensity in bilateral parietal lobes and body of corpus callosum",
+      "diagnosis_accuracy": {
+        "similarity_score": 0.13513513513513514,
+        "accuracy_level": "no_match",
+        "is_correct": false,
+        "predicted_normalized": "no diagnosis found",
+        "ground_truth_normalized": "acute toxic leukoencephalopathy due to methanol toxicity"
+      }
+    },
+    {
+      "sample_id": 31,
+      "filename": "case0003_001.png",
+      "ground_truth_diagnosis": "MELAS: mitochondrial encephalomyopathy, lactic acidosis, and \"stroke-like\" episodes.",
+      "differential_diagnosis": "MELAS: mitochondrial encephalomyopathy, lactic acidosis, and \"stroke-like\" episodes.; Stroke; MERRF (Myoclonic Epilepsy with Ragged-Red Fibres); Leigh syndrome; Kearns-Sayre syndrome",
+      "predicted_diagnosis": "No diagnosis found",
+      "generated_report": "Error in generation: string indices must be integers, not 'str'",
+      "clinical_history": "A 41-year-old male patient with a history of deafness, mitral valve prolapse, arterial hypertension but without toxic habits came to the emergency room with dyschromatopsia and mild dysarthria. Ten days before, he had been diagnosed with ischaemic stroke after having developed a confusional state and fluctuating sensory aphasia that recovered completely.",
+      "caption": "Axial FLAIR sequence still shows the cortical hypersignal in the left parietal lobe. There is a new cortical hyperintense image in the left occipital paramedian gyrus.",
+      "diagnosis_accuracy": {
+        "similarity_score": 0.2376237623762376,
+        "accuracy_level": "no_match",
+        "is_correct": false,
+        "predicted_normalized": "no diagnosis found",
+        "ground_truth_normalized": "melas: mitochondrial encephalomyopathy, lactic acidosis, and \"stroke-like\" episodes"
+      }
+    },
+    {
+      "sample_id": 32,
+      "filename": "case0147_001.png",
+      "ground_truth_diagnosis": "Idiopathic hypertrophic pachymeningitis",
+      "differential_diagnosis": "Idiopathic hypertrophic pachymeningitis; Tolosa hunt syndrome; Sarcoidosis; Lymphoma; Idiopathic hypertrophic pachymeningitis",
+      "predicted_diagnosis": "No diagnosis found",
+      "generated_report": "Error in generation: string indices must be integers, not 'str'",
+      "clinical_history": "65-year-old male. Headache since 5-6 months. Gait disturbance increasing gradually since 5-6 months. Left eye blurred vision and Right eye watery discharge since 2 days. No other significant relevant past medical history. The patient\u2019s routine biochemistry was normal and CSF showed normal cell count, sugar and protein levels. Patient\u2019s HIV, HBsAG, VDRL, Rheumatoid factor and Antinuclear antibodies were negative. Patient was undergoing corticosteroid therapy and had improved vision and headache.",
+      "caption": "T1WI POST-CONTRAST (supratentorial region)",
+      "diagnosis_accuracy": {
+        "similarity_score": 0.21052631578947367,
+        "accuracy_level": "no_match",
+        "is_correct": false,
+        "predicted_normalized": "no diagnosis found",
+        "ground_truth_normalized": "idiopathic hypertrophic pachymeningitis"
+      }
+    },
+    {
+      "sample_id": 33,
+      "filename": "case0246_001.png",
+      "ground_truth_diagnosis": "Fahr\u2019s syndrome",
+      "differential_diagnosis": "Hypoparathyroidism; Toxoplasmosis; Mitochondrial myopathy; Cokayne syndrome; Kenny Caffey syndrome; Fahr\u2019s syndrome",
+      "predicted_diagnosis": "No diagnosis found",
+      "generated_report": "Error in generation: string indices must be integers, not 'str'",
+      "clinical_history": "A 27-year-old male had an incidental finding of intracranial calcifications on a CT head scan. The scan was performed to evaluate an enlarged external occipital protuberance discovered after shaving his head . According to the family, over the past two years, the patient has experienced forgetfulness with a reduced attention span. His academic performance at the university has progressively declined during this period, especially in the last few months, during which he has become more silent and less communicative . He reported no sensory-motor disturbances, cerebellar symptoms, seizures, or extrapyramidal features. Consequently, both CT and MRI scans of the head were requested.",
+      "caption": "T1 sequence showing high signal in basal ganglia bilaterally",
+      "diagnosis_accuracy": {
+        "similarity_score": 0.30303030303030304,
+        "accuracy_level": "no_match",
+        "is_correct": false,
+        "predicted_normalized": "no diagnosis found",
+        "ground_truth_normalized": "fahr\u2019s syndrome"
+      }
+    },
+    {
+      "sample_id": 34,
+      "filename": "case0070_001.png",
+      "ground_truth_diagnosis": "Hypertrophic olivary degeneration",
+      "differential_diagnosis": "Hypertrophic olivary degeneration; Demyelinating disorders; Astrocytoma; Infections",
+      "predicted_diagnosis": "No diagnosis found",
+      "generated_report": "Error in generation: string indices must be integers, not 'str'",
+      "clinical_history": "One month after having run out of his anti-hypertensive medication, a 61-year-old male patient was diagnosed in the emergency room as having had a stroke. Nine months after the stroke, he developed a synchronous tremor in his palate.",
+      "caption": "Day 0. Interval evolution of haemorrhage of the dorsal pons, a slightly\neccentric to the right.",
+      "diagnosis_accuracy": {
+        "similarity_score": 0.19607843137254902,
+        "accuracy_level": "no_match",
+        "is_correct": false,
+        "predicted_normalized": "no diagnosis found",
+        "ground_truth_normalized": "hypertrophic olivary degeneration"
+      }
+    },
+    {
+      "sample_id": 35,
+      "filename": "case0070_002.png",
+      "ground_truth_diagnosis": "Hypertrophic olivary degeneration",
+      "differential_diagnosis": "Hypertrophic olivary degeneration; Demyelinating disorders; Astrocytoma; Infections",
+      "predicted_diagnosis": "No diagnosis found",
+      "generated_report": "Error in generation: string indices must be integers, not 'str'",
+      "clinical_history": "One month after having run out of his anti-hypertensive medication, a 61-year-old male patient was diagnosed in the emergency room as having had a stroke. Nine months after the stroke, he developed a synchronous tremor in his palate.",
+      "caption": "Day 30. Interval evolution of haemorrhage of the dorsal pons, a slightly\neccentric to the right.",
+      "diagnosis_accuracy": {
+        "similarity_score": 0.19607843137254902,
+        "accuracy_level": "no_match",
+        "is_correct": false,
+        "predicted_normalized": "no diagnosis found",
+        "ground_truth_normalized": "hypertrophic olivary degeneration"
+      }
+    },
+    {
+      "sample_id": 36,
+      "filename": "case0070_003.png",
+      "ground_truth_diagnosis": "Hypertrophic olivary degeneration",
+      "differential_diagnosis": "Hypertrophic olivary degeneration; Demyelinating disorders; Astrocytoma; Infections",
+      "predicted_diagnosis": "No diagnosis found",
+      "generated_report": "Error in generation: string indices must be integers, not 'str'",
+      "clinical_history": "One month after having run out of his anti-hypertensive medication, a 61-year-old male patient was diagnosed in the emergency room as having had a stroke. Nine months after the stroke, he developed a synchronous tremor in his palate.",
+      "caption": "Day 120. Interval evolution of haemorrhage of the dorsal pons, a slightly\neccentric to the right.",
+      "diagnosis_accuracy": {
+        "similarity_score": 0.19607843137254902,
+        "accuracy_level": "no_match",
+        "is_correct": false,
+        "predicted_normalized": "no diagnosis found",
+        "ground_truth_normalized": "hypertrophic olivary degeneration"
+      }
+    },
+    {
+      "sample_id": 37,
+      "filename": "case0070_011.png",
+      "ground_truth_diagnosis": "Hypertrophic olivary degeneration",
+      "differential_diagnosis": "Hypertrophic olivary degeneration; Demyelinating disorders; Astrocytoma; Infections",
+      "predicted_diagnosis": "No diagnosis found",
+      "generated_report": "Error in generation: string indices must be integers, not 'str'",
+      "clinical_history": "One month after having run out of his anti-hypertensive medication, a 61-year-old male patient was diagnosed in the emergency room as having had a stroke. Nine months after the stroke, he developed a synchronous tremor in his palate.",
+      "caption": "Day 0. Interval evolution of haemorrhage of the dorsal pons.",
+      "diagnosis_accuracy": {
+        "similarity_score": 0.19607843137254902,
+        "accuracy_level": "no_match",
+        "is_correct": false,
+        "predicted_normalized": "no diagnosis found",
+        "ground_truth_normalized": "hypertrophic olivary degeneration"
+      }
+    },
+    {
+      "sample_id": 38,
+      "filename": "case0070_008.png",
+      "ground_truth_diagnosis": "Hypertrophic olivary degeneration",
+      "differential_diagnosis": "Hypertrophic olivary degeneration; Demyelinating disorders; Astrocytoma; Infections",
+      "predicted_diagnosis": "No diagnosis found",
+      "generated_report": "Error in generation: string indices must be integers, not 'str'",
+      "clinical_history": "One month after having run out of his anti-hypertensive medication, a 61-year-old male patient was diagnosed in the emergency room as having had a stroke. Nine months after the stroke, he developed a synchronous tremor in his palate.",
+      "caption": "Day 30. Interval evolution of haemorrhage of the dorsal pons.",
+      "diagnosis_accuracy": {
+        "similarity_score": 0.19607843137254902,
+        "accuracy_level": "no_match",
+        "is_correct": false,
+        "predicted_normalized": "no diagnosis found",
+        "ground_truth_normalized": "hypertrophic olivary degeneration"
+      }
+    },
+    {
+      "sample_id": 39,
+      "filename": "case0070_009.png",
+      "ground_truth_diagnosis": "Hypertrophic olivary degeneration",
+      "differential_diagnosis": "Hypertrophic olivary degeneration; Demyelinating disorders; Astrocytoma; Infections",
+      "predicted_diagnosis": "No diagnosis found",
+      "generated_report": "Error in generation: string indices must be integers, not 'str'",
+      "clinical_history": "One month after having run out of his anti-hypertensive medication, a 61-year-old male patient was diagnosed in the emergency room as having had a stroke. Nine months after the stroke, he developed a synchronous tremor in his palate.",
+      "caption": "Day 120. Interval evolution of haemorrhage of the dorsal pons.",
+      "diagnosis_accuracy": {
+        "similarity_score": 0.19607843137254902,
+        "accuracy_level": "no_match",
+        "is_correct": false,
+        "predicted_normalized": "no diagnosis found",
+        "ground_truth_normalized": "hypertrophic olivary degeneration"
+      }
+    },
+    {
+      "sample_id": 40,
+      "filename": "case0070_010.png",
+      "ground_truth_diagnosis": "Hypertrophic olivary degeneration",
+      "differential_diagnosis": "Hypertrophic olivary degeneration; Demyelinating disorders; Astrocytoma; Infections",
+      "predicted_diagnosis": "No diagnosis found",
+      "generated_report": "Error in generation: string indices must be integers, not 'str'",
+      "clinical_history": "One month after having run out of his anti-hypertensive medication, a 61-year-old male patient was diagnosed in the emergency room as having had a stroke. Nine months after the stroke, he developed a synchronous tremor in his palate.",
+      "caption": "Day 270. Interval evolution of haemorrhage of the dorsal pons.",
+      "diagnosis_accuracy": {
+        "similarity_score": 0.19607843137254902,
+        "accuracy_level": "no_match",
+        "is_correct": false,
+        "predicted_normalized": "no diagnosis found",
+        "ground_truth_normalized": "hypertrophic olivary degeneration"
+      }
+    },
+    {
+      "sample_id": 41,
+      "filename": "case0070_004.png",
+      "ground_truth_diagnosis": "Hypertrophic olivary degeneration",
+      "differential_diagnosis": "Hypertrophic olivary degeneration; Demyelinating disorders; Astrocytoma; Infections",
+      "predicted_diagnosis": "No diagnosis found",
+      "generated_report": "Error in generation: string indices must be integers, not 'str'",
+      "clinical_history": "One month after having run out of his anti-hypertensive medication, a 61-year-old male patient was diagnosed in the emergency room as having had a stroke. Nine months after the stroke, he developed a synchronous tremor in his palate.",
+      "caption": "Day 270. Interval\ndevelopment of an expansile lesion of the right medullary olive.",
+      "diagnosis_accuracy": {
+        "similarity_score": 0.19607843137254902,
+        "accuracy_level": "no_match",
+        "is_correct": false,
+        "predicted_normalized": "no diagnosis found",
+        "ground_truth_normalized": "hypertrophic olivary degeneration"
+      }
+    },
+    {
+      "sample_id": 42,
+      "filename": "case0070_005.png",
+      "ground_truth_diagnosis": "Hypertrophic olivary degeneration",
+      "differential_diagnosis": "Hypertrophic olivary degeneration; Demyelinating disorders; Astrocytoma; Infections",
+      "predicted_diagnosis": "No diagnosis found",
+      "generated_report": "Error in generation: string indices must be integers, not 'str'",
+      "clinical_history": "One month after having run out of his anti-hypertensive medication, a 61-year-old male patient was diagnosed in the emergency room as having had a stroke. Nine months after the stroke, he developed a synchronous tremor in his palate.",
+      "caption": "Day 270. Interval\ndevelopment of an expansile lesion of the right medullary olive.",
+      "diagnosis_accuracy": {
+        "similarity_score": 0.19607843137254902,
+        "accuracy_level": "no_match",
+        "is_correct": false,
+        "predicted_normalized": "no diagnosis found",
+        "ground_truth_normalized": "hypertrophic olivary degeneration"
+      }
+    },
+    {
+      "sample_id": 43,
+      "filename": "case0070_006.png",
+      "ground_truth_diagnosis": "Hypertrophic olivary degeneration",
+      "differential_diagnosis": "Hypertrophic olivary degeneration; Demyelinating disorders; Astrocytoma; Infections",
+      "predicted_diagnosis": "No diagnosis found",
+      "generated_report": "Error in generation: string indices must be integers, not 'str'",
+      "clinical_history": "One month after having run out of his anti-hypertensive medication, a 61-year-old male patient was diagnosed in the emergency room as having had a stroke. Nine months after the stroke, he developed a synchronous tremor in his palate.",
+      "caption": "Day 270. Interval development of an expansile lesion of the right medullary olive.",
+      "diagnosis_accuracy": {
+        "similarity_score": 0.19607843137254902,
+        "accuracy_level": "no_match",
+        "is_correct": false,
+        "predicted_normalized": "no diagnosis found",
+        "ground_truth_normalized": "hypertrophic olivary degeneration"
+      }
+    },
+    {
+      "sample_id": 44,
+      "filename": "case0070_007.png",
+      "ground_truth_diagnosis": "Hypertrophic olivary degeneration",
+      "differential_diagnosis": "Hypertrophic olivary degeneration; Demyelinating disorders; Astrocytoma; Infections",
+      "predicted_diagnosis": "No diagnosis found",
+      "generated_report": "Error in generation: string indices must be integers, not 'str'",
+      "clinical_history": "One month after having run out of his anti-hypertensive medication, a 61-year-old male patient was diagnosed in the emergency room as having had a stroke. Nine months after the stroke, he developed a synchronous tremor in his palate.",
+      "caption": "Day 270. Interval development of an expansile lesion of the right medullary olive.",
+      "diagnosis_accuracy": {
+        "similarity_score": 0.19607843137254902,
+        "accuracy_level": "no_match",
+        "is_correct": false,
+        "predicted_normalized": "no diagnosis found",
+        "ground_truth_normalized": "hypertrophic olivary degeneration"
+      }
+    },
+    {
+      "sample_id": 45,
+      "filename": "case0096_001.png",
+      "ground_truth_diagnosis": "Marchiafava-Bignami disease",
+      "differential_diagnosis": "Marchiafava-Bignami disease; Multiple sclerosis; Diffuse axonal injury; Progressive multifocal leukoencephalopathy; Callosal infarction",
+      "predicted_diagnosis": "No diagnosis found",
+      "generated_report": "Error in generation: string indices must be integers, not 'str'",
+      "clinical_history": "A 46-year-old alcoholic Caucasian female patient admitted at the emergency department with an encephalopathy that started 3 hours earlier. Symptoms were mutism, dysarthria, a partial left upper limb hemiparesis and a left facial nerve paralysis.",
+      "caption": "Hyperintense signal of the entire corpus callosum on fluid-attenuated inversion recovery (FLAIR) weighted sequences.",
+      "diagnosis_accuracy": {
+        "similarity_score": 0.26666666666666666,
+        "accuracy_level": "no_match",
+        "is_correct": false,
+        "predicted_normalized": "no diagnosis found",
+        "ground_truth_normalized": "marchiafava-bignami disease"
+      }
+    },
+    {
+      "sample_id": 46,
+      "filename": "case0096_002.png",
+      "ground_truth_diagnosis": "Marchiafava-Bignami disease",
+      "differential_diagnosis": "Marchiafava-Bignami disease; Multiple sclerosis; Diffuse axonal injury; Progressive multifocal leukoencephalopathy; Callosal infarction",
+      "predicted_diagnosis": "No diagnosis found",
+      "generated_report": "Error in generation: string indices must be integers, not 'str'",
+      "clinical_history": "A 46-year-old alcoholic Caucasian female patient admitted at the emergency department with an encephalopathy that started 3 hours earlier. Symptoms were mutism, dysarthria, a partial left upper limb hemiparesis and a left facial nerve paralysis.",
+      "caption": "Hyperintense signal of the entire corpus callosum on fluid-attenuated inversion recovery (FLAIR) weighted sequences.",
+      "diagnosis_accuracy": {
+        "similarity_score": 0.26666666666666666,
+        "accuracy_level": "no_match",
+        "is_correct": false,
+        "predicted_normalized": "no diagnosis found",
+        "ground_truth_normalized": "marchiafava-bignami disease"
+      }
+    },
+    {
+      "sample_id": 47,
+      "filename": "case0043_001.png",
+      "ground_truth_diagnosis": "Hypomelanosis of Ito",
+      "differential_diagnosis": "Hypomelanosis of Ito; Tuberous sclerosis; Vitiligo; Neurofibromatosis",
+      "predicted_diagnosis": "No diagnosis found",
+      "generated_report": "Error in generation: string indices must be integers, not 'str'",
+      "clinical_history": "A 6-year-old boy came for MRI with complaints of delayed development, hypotonia, seizures. Birth history was normal and he was born to non-consanguineous parents. His younger sibling was normal. On clinical examination, the patient had multiple hypopigmented and hyperpigmented patches on limbs, back and chest.",
+      "caption": "FLAIR axial image showing hyperintensities in deep periventricular white matter bilaterally with small hypointense cysts within affected white matter.",
+      "diagnosis_accuracy": {
+        "similarity_score": 0.5263157894736842,
+        "accuracy_level": "partial_match",
+        "is_correct": false,
+        "predicted_normalized": "no diagnosis found",
+        "ground_truth_normalized": "hypomelanosis of ito"
+      }
+    },
+    {
+      "sample_id": 48,
+      "filename": "case0043_002.png",
+      "ground_truth_diagnosis": "Hypomelanosis of Ito",
+      "differential_diagnosis": "Hypomelanosis of Ito; Tuberous sclerosis; Vitiligo; Neurofibromatosis",
+      "predicted_diagnosis": "No diagnosis found",
+      "generated_report": "Error in generation: string indices must be integers, not 'str'",
+      "clinical_history": "A 6-year-old boy came for MRI with complaints of delayed development, hypotonia, seizures. Birth history was normal and he was born to non-consanguineous parents. His younger sibling was normal. On clinical examination, the patient had multiple hypopigmented and hyperpigmented patches on limbs, back and chest.",
+      "caption": "FLAIR axial image showing hyperintensities in deep periventricular white matter bilaterally with small hypointense cysts within affected white matter.",
+      "diagnosis_accuracy": {
+        "similarity_score": 0.5263157894736842,
+        "accuracy_level": "partial_match",
+        "is_correct": false,
+        "predicted_normalized": "no diagnosis found",
+        "ground_truth_normalized": "hypomelanosis of ito"
+      }
+    },
+    {
+      "sample_id": 49,
+      "filename": "case0043_005.png",
+      "ground_truth_diagnosis": "Hypomelanosis of Ito",
+      "differential_diagnosis": "Hypomelanosis of Ito; Tuberous sclerosis; Vitiligo; Neurofibromatosis",
+      "predicted_diagnosis": "No diagnosis found",
+      "generated_report": "Error in generation: string indices must be integers, not 'str'",
+      "clinical_history": "A 6-year-old boy came for MRI with complaints of delayed development, hypotonia, seizures. Birth history was normal and he was born to non-consanguineous parents. His younger sibling was normal. On clinical examination, the patient had multiple hypopigmented and hyperpigmented patches on limbs, back and chest.",
+      "caption": "T2W axial image showing  hyperintensities in deep periventricular white matter with small hyperintense cysts.",
+      "diagnosis_accuracy": {
+        "similarity_score": 0.5263157894736842,
+        "accuracy_level": "partial_match",
+        "is_correct": false,
+        "predicted_normalized": "no diagnosis found",
+        "ground_truth_normalized": "hypomelanosis of ito"
+      }
+    }
+  ]
+}

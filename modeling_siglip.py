@@ -81,7 +81,7 @@ class SiglipAttention(nn.Module):
         self.k_prj = nn.Linear(self.embed_dim, self.embed_dim)
         self.v_prj = nn.Linear(self.embed_dim, self.embed_dim)
         self.out_prj =nn.Linear(self.embed_dim, self.embed_dim) 
-    
+   
     def forward(self, hidden_states: torch.Tensor):
         # print(hidden_states)
         #[B, Num_Patches, Embed_dim] --> [B, Num_heads, Num_patches, head_dim]
@@ -195,6 +195,6 @@ class SiglipVisionModel(nn.Module):
 if __name__ == "__main__":
     config = SiglipVisionConfig()
     embedding = SiglipVisionEmbedding(config)
-    x = torch.rand(16, 3, 224, 224)
+    x = torch.rand(24, 3, 224, 224)
     model = SiglipVisionModel(config)
     print(model(x).shape)
