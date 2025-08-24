@@ -122,6 +122,51 @@ class GemmaRMSNorm(nn.Module):
         return output.type_as(x)
 
 
+class GemmaRotaryEmbedding(nn.Module):
+    def __init__(self, dim, max_position_embeddings=2048, base=10000.0, device=None):
+        super().__init__()
+        self.dim = dim #this is head_dim
+        self.max_position_embeddings = max_position_embeddings
+        self.base = base
+
+        #Arcording to the formula: theta_i = base ^( -2i/ dim) for i = 0, 2, 4, .... dim 
+        self.inv_freq = 1.0 / (self.base ** (torch.arange(0, self.dim, 2, dtype = torch.int64).float() / self.dim))
+        self.register_buffer("inv_freq", tensor = self.inv_freq, persistent = False)
+        
+    @torch.no_grad
+    def forward(self, x, position_ids, seq_len=None):
+        # x: [batch_size, num_heads, seq_lenm, head_dim]
+        self.inv_freq.to(x.device)
+        #inv freq expanded: [batch_size, head_dim // 2, 1]
+        inv_freq_expanded = self.inv_freq[None, : , None].float().expand(position_ids.shape[0], - 1, 1)
+        #position_ids exapanded: [batch_size, 1, seq_len]
+        position_ids_expanded = position_ids[:, None, :].float()
+        device_type = x.device.type
+        with torch.autocast(device_type=device_type, enabled=False):
+            #Multiply each theta by the position( which is the args of the sin and cos function)
+            #freqs: [batch_size, head_dim // 2, 1] @ [batch_size, 1, seq_len] --> [batch_size, seq_len, head_dim // 2]
+            freqs = (inv_freq_expanded.float() @ position_ids_expanded.float()).transpose(1, 2)
+            #emb : [batch_size, seq_len, head_dim]
+            emb = torch.cat((freqs, freqs), dim = -1)
+            #cos, sin: [batch_size, seq_len, head_dim]
+            cos = emb.cos()
+            sin = emb.sin()
+        return cos.to(dtype=x.dtype), sin.to(dtype=x.dtype)
+
+def rotate_half(x:torch.Tensor):
+    #build the [-x2, x1, -x4, x3, ...] tensor for the sinpart of the positional encoding
+    x1 = x[..., :x.shape[-1]//2] #first half of the last dimension
+    x2 = x[..., x.shape[-1]//2: ] #second half of the last dimension
+    return torch.cat((-x2, x1), dim = 1)
+
+def apply_rotary_pos_emb(q, k , cos, sin, unsqueeze_dim=1):
+    #[batch_size, 1 , seq_len, head_dim]. Do this inorder to apply the RoPE onto every heads
+    cos = cos.unsqueeze(unsqueeze_dim)
+    sin = sin.unsqueeze(unsqueeze_dim)
+    #Apply the RoPE formula
+    q_embed = (q*cos) + (rotate_half(q)*sin)
+    k_embed = (k*cos) + (rotate_half(k) * sin)
+    return q_embed, k_embed
 class GemmaMLP(nn.Module):
     def __init__(self, config: GemmaConfig):
         super().__init__()
@@ -132,15 +177,22 @@ class GemmaMLP(nn.Module):
         self.up_proj= nn.Linear(self.hidden_size, self.intermediate_size, bias = False)
         self.down_proj = nn.Linear(self.intermediate_size, self.hidden_size, bias = False)
 
-    def forward(self, x):
+    def forward(self, x:torch.Tensor):
         #Equivalent to:
         # y = self.gate_proj(x), [batch_size, seq_len, hidden_size] --> [batch_size, seq_len, intermediate_size]
         # y = torch.gelu(y, approximate="tanh") -> [batch_size, seq_len, intermediate_size]
         # j = self.up_proj(x) [batch_size, seq_len, hidden_size] --> [batch_size, seq_len, intermediate_size]
         # z = y* j [batch_size, seq_len, intermediate_size]
         # z = self.down_proj(z) [batch_size, seq_len, intermediate_size] --> [batch_size, seq_len, hidden_size]
-        return self.down_prj(nn.functional.gelu(self.gate_prj(x), approximate = "tanh") * self.up_proj(x))
+        return self.down_proj(nn.functional.gelu(self.gate_proj(x)) * self.up_proj(x))
 
+def repeat_kv(hidden_states: torch.Tensor, n_rep: int) -> torch.Tensor:
+    batch, num_key_value_heads, slen, head_dim = hidden_states.shape
+    if n_rep == 1:
+        return hidden_states
+    #[batch_size, num_key_value_heads, seq_len, head_dim] -> [batch_size, num_key_value_heads, n_rep , seq_len, head_dim]
+    hidden_states = hidden_states[:, :, None, :, :].expand(batch, num_key_value_heads, n_rep, slen, head_dim)
+    return hidden_states.reshape(batch, num_key_value_heads * n_rep, slen, head_dim)
 
 class GemmaAttention(nn.Module):
     def __init__(self, config:GemmaConfig, layer_idx:Optional[int] = None):
@@ -157,6 +209,7 @@ class GemmaAttention(nn.Module):
         self.max_position_embeddings = config.max_position_embeddings
         self.rope_theta = config.rope_theta
         self.is_causal = True
+        self.rotary_emb = GemmaRotaryEmbedding(self.head_dim, self.max_position_embeddings, base=self.rope_theta)
 
         assert self.hidden_size % self.num_heads == 0, "Cannot divide hidden dimensions to multiple heads "
 
@@ -336,11 +389,8 @@ class GemmaForCausalLM(nn.Module):
             return_data["kv_cache"] = kv_cache
         
         return return_data
-    
-    
-    
-    
-    
+     
+     
 class PaliGemmaMultiModalProjector(nn.Module):
     def __init__(self, config: PaliGemmaConfig):
         super().__init__()
@@ -364,7 +414,7 @@ class PaliGemmaForConditionalGeneration(nn.Module):
         self.pad_token_id=self.config.pad_token_id if self.config.pad_token_id is not None else -1
 
     def tie_weights(self): 
-        return self.language_model.tie_wieghts()
+        return self.language_model.tie_weights()
 
     def _merge_input_ids_with_image_features(
             self, image_features: torch.Tensor, inputs_embeds: torch.Tensor, input_ids:torch.Tensor, attention_mask:torch.Tensor, kv_cache
@@ -418,7 +468,7 @@ class PaliGemmaForConditionalGeneration(nn.Module):
              #the position of the query is the last position
              position_ids = attention_mask.cumsum(-1)[:, -1]
              if position_ids.dim() == 1:
-                 position_ids = position_ids.unsqueeze(0) # [batch_size, seq_len]
+                position_ids = position_ids.unsqueeze(0) # [batch_size, seq_len]
         else:
             #Create a position_ids bassed on the size of the attention_mask
             # For masked_tokens, use the number 1 as position 
@@ -430,8 +480,9 @@ class PaliGemmaForConditionalGeneration(nn.Module):
     def forward(self,
                 inputs_ids: torch.LongTensor,
                 pixel_values: torch.FloatTensor,
-                attention_mask: Optional[torch.Tensor],
-                kv_cache: Optional[KVCache]):
+                attention_mask: Optional[torch.Tensor]=None,
+                kv_cache: Optional[KVCache]=None
+        ):
         assert torch.all(attention_mask == 1), "the input can not be padded"
 
         #Extract input embeddings
