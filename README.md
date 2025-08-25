@@ -1,3 +1,3 @@
 # VLM-pytorch
 
-An implementation of PaliGemma from scratch om Pytorch. Huggingface Checkpoints of Paligemma model is required(see in inference.py file)
+An implementation of PaliGemma from scratch in Pytorch. Huggingface checkpoints of Paligemma model is required(see in inference.py file)
